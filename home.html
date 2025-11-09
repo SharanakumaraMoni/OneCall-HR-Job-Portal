@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="images\icons.jpg" type="image/png">
+    <link rel="stylesheet" href="css\Candidateregistore.css">
+    <script src="js\Candidateregistore.js"></script>
+    <link rel="stylesheet" href="css\Candidateregistore.css">
+    <link rel="stylesheet" href="css\home.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <script src="js\Candidateregistore.js"></script>
+    <link rel="stylesheet" href="css\Candidateregistore.css">
+    <link rel="stylesheet" href="css\home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css\footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />    
+    <link href="css\aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bgforhero.css">
+</head>
+<body style="overflow-y: scroll;">
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/icons.jpg" alt="">
+            </div>        
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="Contactus.html">Contact Us</a>
+            </div>
+            <div class="nav right-nav">
+                <a href="loginforCompany.html">Employers</a>
+                <a href="loginforCandidates.html">Job seeker</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="background-slideshow">
+            <div class="background-image"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text" style="margin-left: 150px;" data-aos="fade-left">
+                <div class="content">
+                    <div class="typed-out"><h3>The best place to find Furniture and Sofa companies for your dream job</h3></div>
+                    <div class="typed-out"><p>Unlock new career opportunities with our job search tool</p></div>
+                </div>
+                <form>
+                    <input type="text" placeholder="Job title or Company">
+                    <input type="text" placeholder="City">
+                    <button type="submit" style="text-decoration-color: whitesmoke">Search</button>
+                </form>
+            </div>
+            <div class="image-slideshow" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="image fade">
+                <img src="images\homeimg10.jpg" alt="Mountain Top">
+                </div>        
+                <div class="image fade">
+                <img src="images\homeimg2.jpg" alt="Palm Trees">
+                </div>        
+                <div class="image fade">
+                <img src="images\homeimg3.jpg" alt="Neon Sign">
+                </div>
+            </div>
+              <script>
+                let index = 0;
+          displayImages();
+          function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+              images[i].style.display = "none";
+            }
+            index++;
+            if (index > images.length) {
+              index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 4000); 
+          }
+              </script>
+              <!-- Include AOS JavaScript library -->
+    <script src="path/to/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+<script>
+const backgroundImages = [
+'images/bgforhero1.jpg',
+'images/bgforhero2.jpg',
+'images/bgforhero3.jpg'
+];
+
+let currentIndex = 0;
+const backgroundElement = document.querySelector('.background-image');
+
+function changeBackgroundImage() {
+backgroundElement.style.backgroundImage = `url(${backgroundImages[currentIndex]})`;
+backgroundElement.classList.add('fade-in');
+
+setTimeout(() => {
+    backgroundElement.classList.remove('fade-in');
+}, 1000);
+
+currentIndex = (currentIndex + 1) % backgroundImages.length;
+}
+
+// Change background image every 5 seconds
+setInterval(changeBackgroundImage, 6000);
+</script>
+
+        </div>
+    </section>
+    
+
+    <section class="about">
+        <div class="about-content">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="about-image" style="margin-left: 150px;">
+                <img src="images\homeimg7.jpg" alt="Description of the image">
+            </div>
+            <div data-aos="zoom-in-up" class="about-text">
+                <h2>About Us</h2>
+                <p>Furniture and Sofa industries Jobs</p>
+                <p>Your search ends here with OneCall.co, India's largest and fastest-growing professional opportunities platform.</p>
+                <button type="submit">Discover More</button>
+            </div>
+            <!-- Include AOS JavaScript library -->
+    <script src="path/to/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+        </div>
+    </section>
+
+    
+    
+
+    <section class="why-us">
+        <div class="why-us-content">
+            <div class="why-us-text" style="margin-left: 150px;" data-aos="fade-down-right">
+                <h2>Why us</h2>
+                <h2>Why Furniture and Sofa industries jobs?</h2>
+                <p>Furniture making career feels like a distant dream. Although they have a passion for woodwork and design,</p> 
+                <p>many would-be woodworkers don’t realise that furniture making is a viable career option.</p>
+                <button type="submit" style=" background-color: #975429;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 18px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;">Discover More</button>
+            </div>
+            <div class="why-us-image" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <img src="images\why us img.jpg" alt="Description of the image">
+            </div>
+                    <!-- Include AOS JavaScript library -->
+    <script src="path/to/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+        </div>
+    </section>
+    
+    <section class="client">
+        <h1 style="text-align: center;font-size: 36px;">Our Clients</h1>
+        <div class="client-logos">
+            <img src="images\Atmosphere.jpg" alt="Company 1">
+            <img src="images\Auburn.jpg" alt="Company 2">
+            <img src="images\Belito.jpg" alt="Company 3">
+            <img src="images\ensemble.jpg" alt="Company 4">
+            <img src="images\Kalatmak.jpg" alt="Company 5">
+            <img src="images\Tchtonics.jpg" alt="Company 7">
+            <img src="images\U&M.jpg" alt="Company 8">
+            <img src="images\Weaver.jpg" alt="Company 9">
+            <img src="images\WILLIAM.jpg" alt="Company 10">
+            <img src="images\Woodcraft.jpg" alt="Company 11">
+            <img src="images\arions.jpg" alt="Company 12">
+            <img src="images\Ashish.jpg" alt="Company 13">
+            <img src="images\durian.jpg" alt="Company 14">
+            <img src="images\duroflex.jpg" alt="Company 15">
+            <img src="images\Fabience.jpg" alt="Company 16">
+            <img src="images\padam.jpg" alt="Company 17">
+            <img src="images\Spur.jpg" alt="Company 18">
+            <img src="images\tataria.jpg" alt="Company 19">
+            <img src="images\Tchtonics.jpg" alt="Company 20">
+            
+            <!-- Add more client logos here -->
+        </div>
+    </section>
+    
+  <!-- Category -->  
+    <section class="recent-jobs">
+        <h2 style="text-align: center;font-size: 36px;">Explore By Category</h2>
+        <div class="job-listings">
+                <div class="job-item">
+                    <img src="woodwork-icon.png" alt="Woodwork Icon">
+                    <h3>Woodwork</h3>
+                </div>
+                 <div class="job-item">
+                    <img src="upholstery-icon.png" alt="Upholstery Icon">
+                    <h3>Upholstery</h3>
+                </div>
+                <div class="job-item">
+                 <img src="design-icon.png" alt="Design Icon">
+                    <h3>Design</h3>
+                </div>
+                <div class="job-item">
+                    <img src="woodwork-icon.png" alt="Woodwork Icon">
+                    <h3>Woodwork</h3>
+                </div>
+                <div class="job-item">
+                    <img src="upholstery-icon.png" alt="Upholstery Icon">
+                    <h3>Upholstery</h3>
+                </div>
+                <div class="job-item">
+                    <img src="design-icon.png" alt="Design Icon">
+                    <h3>Design</h3>
+                </div>
+                <div class="job-item">
+                    <img src="woodwork-icon.png" alt="Woodwork Icon">
+                    <h3>Woodwork</h3>
+                </div>
+                 <div class="job-item">
+                    <img src="upholstery-icon.png" alt="Upholstery Icon">
+                    <h3>Upholstery</h3>
+                 </div>
+                <div class="job-item">
+                    <img src="design-icon.png" alt="Design Icon">
+                    <h3>Design</h3>
+                </div>
+                <div class="job-item">
+                    <img src="woodwork-icon.png" alt="Woodwork Icon">
+                    <h3>Woodwork</h3>
+                </div>
+                <div class="job-item">
+                    <img src="upholstery-icon.png" alt="Upholstery Icon">
+                    <h3>Upholstery</h3>
+                </div>
+                <div class="job-item">
+                    <img src="design-icon.png" alt="Design Icon">
+                    <h3>Design</h3>
+                </div>
+                 <!-- Add more categories here -->
+            </div>
+    </section>
+    
+    
+
+    <section class="steps">
+        <div class="steps-content" >
+            <div class="text-content">
+                <h1>Easy steps to find the jobs</h1>
+                <ol>
+                    <h2><li>Create Your Profile</li></h2>
+                    <h2><li>Subscribe Now</li></h2>
+                    <h2><li>Search for Jobs</li></h2>
+                    <h2><li>Apply for Job</li></h2>
+                </ol>
+                <p>To create your account, <a href="#">click here</a></p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section class="recent-jobs">
+        <h2>Recent Popular Jobs</h2>
+        <div class="job-listings">
+            <div class="job-item">
+                <h3>Job Title 1</h3>
+                <p>Location 1</p>
+            </div>
+            <div class="job-item">
+                <h3>Job Title 2</h3>
+                <p>Location 2</p>
+            </div>
+            <div class="job-item">
+                <h3>Job Title 1</h3>
+                <p>Location 1</p>
+            </div>
+            <div class="job-item">
+                <h3>Job Title 2</h3>
+                <p>Location 2</p>
+            </div>
+            <div class="job-item">
+                <h3>Job Title 1</h3>
+                <p>Location 1</p>
+            </div>
+            <div class="job-item">
+                <h3>Job Title 2</h3>
+                <p>Location 2</p>
+            </div>
+            <div class="job-item">
+                <h3>Job Title 1</h3>
+                <p>Location 1</p>
+            </div>
+            <div class="job-item">
+                <h3>Job Title 2</h3>
+                <p>Location 2</p>
+            </div>
+            <div class="job-item">
+                <h3>Job Title 1</h3>
+                <p>Location 1</p>
+            </div>
+            <div class="job-item">
+                <h3>Job Title 2</h3>
+                <p>Location 2</p>
+            </div>
+            
+            <!-- Add more job items here -->
+        </div>
+        <div class="button-container">
+            <button class="view-all-button">View All Jobs</button>
+        </div>
+    </section>
+    
+    
+
+    <section class="subscribe">
+        <div class="center-content">
+            <div class="content" data-aos="fade-left">
+                <h2>Get Notified Every By New Job</h2>
+                <p>Discover new career paths daily. Check out today's featured job listings.</p>
+                <form>
+                    <label for="mobileNumber">Type your Mobile number:</label>
+                    <input type="text" id="mobileNumber" placeholder="Enter your Mobile number" required>
+                    <button type="submit">Subscribe Now</button>
+                </form> 
+            </div> 
+            <!-- Include AOS JavaScript library -->
+    <script src="path/to/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+        </div>
+        
+    </section>
+    
+
+
+    <div class="footer">
+        <div class="footer-logo">
+            <div class="logo">
+                <img src="images/icons.jpg" alt="">
+            </div><br><br>
+            <div>
+                <div class="social-icons">
+                    <a href="#" class="icon-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+                
+            </div>
+        </div>
+  
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <div class="footer-links">
+                    <a href="#" style="color: black;">About us</a>
+                    <a href="#" style="color: black;">Home</a>
+                    <a href="#" style="color: black;">Feature</a>
+                    <a href="#" style="color: black;">Team</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <div class="footer-links">
+                    <a href="#" style="color: black;">Company</a>
+                    <a href="#" style="color: black;">Contact us</a>
+                    <a href="#" style="color: black;">Career</a>
+                    <a href="#" style="color: black;">Pricing</a>
+                    <a href="#" style="color: black;">Blog</a>
+                </div>
+            </div>
+        </div>
+  
+        <div class="footer-contact-form">
+            <h3>Contact Us</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Your Mobile Number" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box
+}
+.image-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+img {
+  width: 100%
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+</style>
+<body>
+    <div class="image-slideshow">
+      <div class="image fade">
+      <img src="images\home.jpg" alt="Mountain Top">
+      </div>        
+      <div class="image fade">
+      <img src="images\image-9.png" alt="Palm Trees">
+      </div>        
+      <div class="image fade">
+      <img src="images\login.jpg" alt="Neon Sign">
+      </div>
+    </div>
+    <script>
+      let index = 0;
+displayImages();
+function displayImages() {
+  let i;
+  const images = document.getElementsByClassName("image");
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  index++;
+  if (index > images.length) {
+    index = 1;
+  }
+  images[index-1].style.display = "block";
+  setTimeout(displayImages, 2000); 
+}
+    </script>
+</body>
+</html>
